@@ -1,0 +1,247 @@
+:root {
+    --light-black: #222;
+    --light-red: rgb(245, 38, 38); 
+    --white: rgb(237, 237, 237);
+    --purple: rgba(119, 40, 119, 0.535);
+    --pink: rgb(255, 172, 186);
+}
+
+#ek-slideBody {
+    padding: 1rem;
+}
+
+.jump {
+    text-align: center;
+    word-spacing: 10px;
+}
+
+.jump span{
+    display: inline-block;
+    color: var(--light-red);
+    margin: 2rem 0;
+    cursor: pointer,default;
+    transition: transform 0.2s;
+}
+
+.jump span:hover {
+    transform: translateY(-20px) rotate(10deg) scale(1.5);
+}
+
+#ek-slideBtn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.next-prev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-prev button {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--white);
+    font-weight: bold;
+    border-radius: 1rem;
+    border: 2px solid var(--light-red);
+    outline: none;
+    background: var(--white);
+
+}
+
+.carousel__track-container {
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 80%;
+    transition: transform 250ms ease-out;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: contain;
+    border-radius: 1rem;
+}
+
+.carousel__button div {
+    width: 12px;
+}
+
+.carousel__nav {
+    display: flex;
+    position: absolute;
+    top: 65%;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0, 0, 0, .75);
+}
+
+.is-hidden {
+    display: none;
+}
+
+/* modal pop */
+p {
+    display: flex;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    background: var(--white);
+    color: var(--light-black);
+    border-radius: 10px;
+    border: none;
+}
+
+/* contact form */
+
+input:not(:last-child), textarea {
+    border: none;
+    outline: none;
+    padding: .3rem 0;
+    margin-bottom: .8rem;
+    border-radius: 5px;
+}
+
+h2, label {
+    font-weight: bold;
+    color: var(--light-red);
+}
+
+.modal {
+    display: none;
+    border: 1px solid var(--purple);
+    background: transparent;
+    width: 18rem;
+    height: 26rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.modal-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    font-size: 1.5rem;
+}
+
+.in-modal-form {
+    padding: 1rem;
+    background: var(--purple);
+    border-radius: .5rem;
+}
+
+.modal-input {
+    width: 100%;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.name, .email, .number, .url, textarea {
+    width: 95%;
+}
+
+.submit {
+    padding: 0.5rem;
+    border: none;
+    border-radius: .8rem;
+    background: var(--light-black);
+    color: var(--white);
+}
+
+@media ( min-width: 769px) {
+    #ek-slideBtn {
+        height: 35rem;
+    }
+
+    .carousel__track-container {
+        height: 70%;
+    }
+    
+    .carousel__track {
+        height: 100%;
+    }
+
+    .carousel__nav {
+        top: 90%;
+    }
+
+}
+
+@media ( max-width: 768px) {
+    #ek-slideBtn {
+        height: 30rem;
+    }
+
+    .carousel__track-container {
+        height: 70%;
+    }
+    
+    .carousel__track {
+        height: 100%;
+    }
+
+    .carousel__nav {
+        top: 90%;
+    }
+
+}
+
+@media ( max-width: 480px) {
+    
+    .carousel__track-container {
+        height: 60%;
+    }
+    
+    .carousel__track {
+        height: 80%;
+    }
+
+    .carousel__nav {
+        top: 70%;
+    }
+}

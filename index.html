@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+</head> 
+<body>
+
+    <header>
+        <div id="ek-holder">
+            <div class="ek-name" style="color: rgb(79, 79, 79);">shop<span style="color: rgb(247, 37, 37);">All</span></div>
+
+            <div id="ek-open">
+                <div class="one"></div>
+                <div class="one"></div>
+                <div class="one"></div>
+            </div>
+
+            <nav id="ek-mainNav">
+
+                <div id="ek-closeNav">
+                    <h4 style="color: rgb(79, 79, 79);">shop
+                        <span style="color: #222;;">All</span>
+                    </h4>
+                    <div id="ek-close">
+                        <div class="one"></div>
+                        <div class="one"></div>
+                        <div class="one"></div>
+                    </div>
+                </div>
+                <ul id="ek-ul">
+                    <li><a href="#ek-home">HOME</a></li>
+                    <li><a href="#ek-feature">FEATURE</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#address">ADDRESS</a></li>
+                    <li><a href="#login">LOGIN</a></li>
+                    <li><a class="register" href="#REGISTER">signup</a></li>
+                </ul>
+            </nav>
+            <div id="ek-icon">
+                <img src="./icons/search.png" width="15" alt="">
+                <img src="./icons/user.png" width="15" alt="">
+                <img src="./icons/heart.png" width="15" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main id="ek-home">
+        <div id="ek-body" class="ek-body">
+            <div id="ek-detail">
+                <div id="ek-title">Get<span>50%</span>off your first shoping with with shop<span>All</span>online shop</span>
+            </div>
+            <div id="ek-shop">
+                <a href="#">shop now</a>
+                <a href="#">&DownArrow;</a>
+            </div>
+        </div>
+
+        <div id="ek-feature">
+            <div id="ek-shoped">
+                <div id="ek-align">
+                    <h4>interior and funiture</h4>
+                    <span></span>
+                </div>
+                <form id="ek-arr">
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-1.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Uncle Room</span>
+                            <span id="ek-price">price:$10</span>
+                            <!--  -->
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="uncle" min="0" size="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-2.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Rest Room</span>
+                            <span id="ek-price">$13</span>
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="rest" min="0" size="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-4.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Kid Room</span>
+                            <span id="ek-price">$9</span>
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="kid" min="0" size="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-5.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Kicthen</span>
+                            <span id="ek-price">$14</span>
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="kitchen" min="0" size="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-6.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Living Room</span>
+                            <span id="ek-price">$15</span>
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="living" min="0" size="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-choice">
+                        <div id="ek-img">
+                            <img src="./room/product-3.jpeg" alt="">
+                        </div>
+                        <div id="ek-star">
+                            <span color: red;>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&Star;</span>
+                            <span>&star;</span>
+                        </div>
+                        <div id="ek-type">
+                            <span id="ek-bedName">Guest Room</span>
+                            <span id="ek-price">$5</span>
+                            <div id="ek-calc">
+                                <span>Quantity:</span>
+                                <input type="number" name="number" class="ek-num" id="guest" value="0" min="0" size="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ek-estimate">
+                        <div class="ek-est">Click to purchase</div>
+                        <div class="ek-total" >
+                            <button class="ek-estm">Purchase</button>
+                            <span id="total">0.00</span>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+
+            <div id="ek-slideBody">
+                <h3 class="jump">Interior and Funiture</h3>
+                <div id="ek-slideBtn">
+                    <div class="next-prev">
+                        <button class=" carousel__button--left is--hidden">prev</button>
+                        <button class=" carousel__button--right ">Next</button>
+                    </div>
+
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track" >
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="./room/product-1.jpeg">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="./room/product-2.jpeg">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="./room/product-3.jpeg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="ek-update">
+                <div class="our-news">
+                   <h3>Latest News</h3> 
+                </div>
+                <div class="news-line"></div>
+                <div id="news-width">
+                    <div class="container">
+                        <img class="image" src="./room/product-1.jpeg" alt="Avatar">
+                        <div class="middle">
+                          <div class="text">
+                              <p>follow our news</p>
+                              <div class="para">Read More</div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="container">
+                        <img class="image" src="./room/product-2.jpeg" alt="Avatar">
+                        <div class="middle">
+                          <div class="text">
+                              <p>follow our news</p>
+                              <div class="para">Read More</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img class="image" src="./room/product-3.jpeg" alt="Avatar">
+                        <div class="middle">
+                          <div class="text">
+                              <p>follow our news</p>
+                              <div class="para">Read More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- subscripe to our new letter-->
+            </div>
+            <div id="ek-news-let">
+                <div class="newletter">
+                    <h3>Newsletter</h3>
+                    <div class="line"></div>
+                </div>
+                <div class="sub">
+                    <div class="sub-news">
+                       <span>subscribe to our newletter and get 20%</span>
+                    </div>
+        
+                    <form class="news-form">
+                       <input type="text" name="text" id="name" />
+                       <input id="submit" type="submit" value="submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js" async></script>
+</body>
+</html>

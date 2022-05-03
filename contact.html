@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>contact us</title>
+</head>
+<body>
+    <div class="contact-body">
+        <p><button class="button" data-modal="modalOne">Contact Us</button>
+        </p>
+    </div>
+    <div id="modalOne" class="modal">
+        <div class="modal-box">
+            <div class="modal-form">
+                <div class="in-modal-form">
+                    <h2>Contact Us</h2>
+                    <div class="modal-input">
+                        <input type="text" name="name" class="name" placeholder="  Full Name">
+                        <input type="email" name="email" class="email" placeholder=" Email">
+                        <input type="number" name="number" class="number" placeholder=" Phone number">
+                        <input type="url" name="url" class="url" placeholder=" Website">
+                        <label for="message">Message</label>
+                        <textarea name="textarea" class="textarea" cols="25" rows="6"></textarea>
+                        <input class="submit" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-close">&times;</div>
+        </div>
+    </div>
+    <script src="../react-form/contact.js"></script>
+</body>
+</html>
